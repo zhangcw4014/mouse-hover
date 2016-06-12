@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>鼠标悬浮</title>
+	<style type="text/css">
+		body{padding: 0;margin:0;}
+		#main{margin: 0 auto;}
+		#mapBg{width: 100%;}
+		.hotSpot{
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+		}
+		.hotSpot a.hotSpotBtn span{
+			background: url(img/1.png) 0 0 no-repeat;
+		}
+		.hotSpot a span{
+			width: 32px;
+			height: 32px;
+			display: block;
+			text-indent: -9999px;
+			cursor: pointer;
+			opacity: 1;
+			position: absolute;
+			z-index: 1;
+		}
+		#zgHotspot{
+			top:200px;
+			left:300px;
+			opacity: 1;
+		}
+		#hlHotspot{
+			top:300px;
+			left:400px;
+			opacity: 1;
+		}
+	</style>
+</head>
+<body>
+    <div id="main">
+    	<img src="img/map.png" id="mapBg"/>
+    	<div class="hotSpot" id="zgHotspot">
+    		 <a href="#" class="hotSpotBtn">
+    		 	<span class="hotSpotSpan"></span>
+    		 	<div class="detailImg" id="zg"></div>
+    		 </a>
+    	</div>
+
+    	<div class="hotSpot" id="hlHotspot">
+    		 <a href="#" class="hotSpotBtn">
+    		 	<span class="hotSpotSpan"></span>
+    		 	<div class="detailImg" id="hl"></div>
+    		 </a>
+    	</div>
+    </div>
+    <script type="text/javascript" src="js/hover.js"></script>
+</body>
+</html>
